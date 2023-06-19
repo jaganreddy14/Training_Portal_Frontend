@@ -32,7 +32,7 @@ export default function Learnings() {
   }, []);
 
   const mylearnings =()=>{
-    fetch("http://localhost:3006/Trainings",{
+    fetch("https://training-portal-server.onrender.com/Trainings",{
       method:"POST",
       headers:{"Content-Type":"application/json"},
       body:JSON.stringify(data)

@@ -30,7 +30,7 @@ export default function Dashboard() {
   };
 
   useEffect(()=>{
-     fetch("http://localhost:3006/users")
+     fetch("https://training-portal-server.onrender.com/users")
      .then((res)=>{
             return res.json()
      })

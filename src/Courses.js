@@ -33,7 +33,7 @@ export default function Courses() {
   };
 
   useEffect(() => {
-    fetch("http://localhost:3006/cources")
+    fetch("https://training-portal-server.onrender.com/cources")
       .then((resp) => {
         return resp.json();
       })
@@ -49,7 +49,7 @@ export default function Courses() {
   const search = async (e) => {
     e.preventDefault();
     return await axios
-      .get(`http://localhost:3006/cources?q=${value}`)
+      .get(`https://training-portal-server.onrender.com/cources?q=${value}`)
       .then((res) => {
         setData(res.data);
       });
@@ -57,7 +57,7 @@ export default function Courses() {
 
   const clearsearch = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3006/cources")
+    fetch("https://training-portal-server.onrender.com/cources")
       .then((resp) => {
         return resp.json();
       })

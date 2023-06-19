@@ -38,7 +38,7 @@ export default function Mylearning() {
   };
 
   const deletecourse = (id) => {
-    fetch("http://localhost:3006/Trainings/" + id, {
+    fetch("https://training-portal-server.onrender.com/Trainings" + id, {
       method: "DELETE",
     });
   };
