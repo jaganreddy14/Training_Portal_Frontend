@@ -21,7 +21,7 @@ export default function Mylearning() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:3006/Trainings")
+    fetch("https://training-portal-server.onrender.com/Trainings")
       .then((res) => {
         return res.json();
       })
