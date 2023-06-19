@@ -22,7 +22,7 @@ export default function Learnings() {
   const {id}=useParams()
 
   useEffect(() => {
-    fetch("http://localhost:3006/cources/"+id)
+    fetch("https://training-portal-server.onrender.com/cources"+id)
       .then((res) => {
         return res.json();
       })
